@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Welcome";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Hi <b>@Context.User.Identity.Name</b>! Welcome to my first MVC 5 Web App!</h2> 
+<hr />
+<h4>Login ke halaman Admin?</h4>
+@Html.ActionLink("Admin Login Page", "AdminOnly", "Home")
+ <br />
+<h4>Sign Out?</h4>
+@Html.ActionLink("Signout", "SignOut", "Account") 

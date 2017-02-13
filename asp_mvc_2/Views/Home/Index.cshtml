@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<br />
+Login? @Html.ActionLink("Login","LogIn","Account")
+<br/>
+No Account yet? @Html.ActionLink("Signup Now!", "SignUp", "Account")
